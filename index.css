@@ -25,3 +25,50 @@ p {
     line-height: 25px;
     margin: 10px 0;
 }
+.tab {
+    width: 100%;
+    max-width: 650px;
+    margin: 50px auto 0 auto;
+}
+.tab ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    li button {
+        border: none;
+        padding: 15px 30px;
+        background-color: var(--background-color);
+        border-radius: 8px 8px 0 0;
+        border-color: orange;
+        font-size: clamp(0.6rem, 3vw, 1rem);
+    }
+    li button:hover {
+        cursor: pointer;
+    }
+    li button[data-active="false"]:hover {
+        text-decoration: underline;
+    }
+    li button[data-active="true"] {
+        background-color: var(--tab-background-color-60);
+    }
+}
+.tabs-content {
+    section {
+    color: var(--text-color);
+
+        border-radius: 8px;
+        @media (max-width: 368px) {
+            border-radius: 0px 8px 8px 8px;
+        }
+    }
+    section[data-tab="first-tab"] {
+        border-radius: 0px 8px 8px 8px;
+    }
+    section[data-tab][data-active="true"] {
+        background-color: var(--tab-background-color);
+        padding: 15px;
+    }
+    section[data-tab][data-active="false"] {
+        display: none;
+    }
+}
