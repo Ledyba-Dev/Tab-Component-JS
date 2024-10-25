@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Component</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="tab">
+        <ul>
+            <li>
+                <button data-tab="first-tab" data-active="true">First Tab</button>
+            </li>
+            <li>
+                <button data-tab="second-tab" data-active="false">Second Tab</button>
+            </li>
+            <li>
+                <button data-tab="third-tab" data-active="false">Third Tab</button>
+            </li>
+        </ul>
+        <div class="tabs-content">
+            <section data-tab="first-tab" data-active="true">
+                <h3>First Section Title</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse sit sapiente harum ullam voluptatem assumenda laborum temporibus labore voluptas dicta! Aperiam voluptas vel ipsa debitis, quas explicabo mollitia nostrum reprehenderit!</p>
+            </section>
+            <section data-tab="second-tab" data-active="false">
+                <h3>Second Section Title</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse sit sapiente harum ullam voluptatem assumenda laborum temporibus labore voluptas dicta! Aperiam voluptas vel ipsa debitis, quas explicabo mollitia nostrum reprehenderit!</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse sit sapiente harum ullam voluptatem assumenda laborum temporibus labore voluptas dicta! Aperiam voluptas vel ipsa debitis, quas explicabo mollitia nostrum reprehenderit!</p>
+                <h3>Tittle about the second section tab</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores omnis fuga atque itaque eos eum eveniet placeat, incidunt architecto excepturi! Veritatis eligendi alias officia vero illum deleniti ullam enim eveniet?</p>
+            </section>
+            <section data-tab="third-tab" data-active="false">
+                <h3>Third Section Title</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse sit sapiente harum ullam voluptatem assumenda laborum temporibus labore voluptas dicta! Aperiam voluptas vel ipsa debitis, quas explicabo mollitia nostrum reprehenderit!</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse sit sapiente harum ullam voluptatem assumenda laborum temporibus labore voluptas dicta! Aperiam voluptas vel ipsa debitis, quas explicabo mollitia nostrum reprehenderit!</p>
+            </section>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
